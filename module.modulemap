@@ -1,7 +1,19 @@
 module CYajl [system] {
-  umbrella "/usr/local/include/yajl"
-  link "yajl"
-  export *
+  module gen {
+    header "/usr/local/include/yajl/yajl_common.h"
+    header "/usr/local/include/yajl/yajl_gen.h"
+    export *
+  }
 
-  module * { export * }
+  module parse {
+    header "/usr/local/include/yajl/yajl_common.h"
+    header "/usr/local/include/yajl/yajl_parse.h"
+    export *
+  }
+
+  module tree {
+    header "/usr/local/include/yajl/yajl_common.h"
+    header "/usr/local/include/yajl/yajl_tree.h"
+    export *
+  }
 }
