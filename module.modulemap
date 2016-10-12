@@ -1,5 +1,5 @@
 module CYajl [system] {
-  header "/usr/local/include/yajl/yajl_parse.h"
+  umbrella "/usr/local/include/yajl"
   link "yajl"
   export *
 
